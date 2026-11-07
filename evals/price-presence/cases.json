@@ -1,0 +1,210 @@
+{
+  "dataset_version": "english-price-v1",
+  "scope": "Synthetic English price-presence regression cases. Not an independently reviewed legal evaluation.",
+  "cases": [
+    {
+      "case_id": "EN-PRICE-01",
+      "source_group": "synthetic-fixed-total",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "The buyer shall pay the price of CNY 1000 within 30 days after delivery.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": true
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    },
+    {
+      "case_id": "EN-PRICE-02",
+      "source_group": "synthetic-unit-price",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "The unit price is RMB 20 per unit; the total depends on accepted quantity.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": true
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    },
+    {
+      "case_id": "EN-PRICE-03",
+      "source_group": "synthetic-payment-method",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "The buyer shall pay by bank transfer.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": false
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    },
+    {
+      "case_id": "EN-PRICE-04",
+      "source_group": "synthetic-undecided",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "The price is not agreed and remains to be determined.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": false
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    },
+    {
+      "case_id": "EN-PRICE-05",
+      "source_group": "synthetic-penalty-only",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "A penalty of CNY 100 is payable for each late day.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": false
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    },
+    {
+      "case_id": "EN-PRICE-06",
+      "source_group": "synthetic-late-price",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "Both parties retain records. Delivery records must be retained. Delivery records must be retained. Delivery records must be retained. Delivery records must be retained. Delivery records must be retained. The purchase price is RMB 1000.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": true
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    },
+    {
+      "case_id": "EN-PRICE-07",
+      "source_group": "synthetic-negated-price",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "No purchase price or pricing method has been agreed.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": false
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    },
+    {
+      "case_id": "EN-PRICE-08",
+      "source_group": "synthetic-zero-price",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "The price is CNY 0; the goods are supplied free of charge.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": true
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    },
+    {
+      "case_id": "EN-PRICE-09",
+      "source_group": "synthetic-comma-decimal",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "The total price is CNY 1,000.50.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": true
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    },
+    {
+      "case_id": "EN-PRICE-10",
+      "source_group": "synthetic-unit-count",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "The unit price is RMB 30 for each of 10 units.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": true
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    },
+    {
+      "case_id": "EN-PRICE-11",
+      "source_group": "synthetic-penalty-and-price",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "The penalty is CNY 500, and the price is CNY 2000.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": true
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    },
+    {
+      "case_id": "EN-PRICE-12",
+      "source_group": "synthetic-rejected-amount",
+      "split": "dev",
+      "input_ref": {
+        "title": "Payment",
+        "content": "The price is not CNY 1000; the actual amount remains pending.",
+        "category": "payment",
+        "contract_type": "purchase_contract"
+      },
+      "expected": {
+        "price_present": false
+      },
+      "label_source": "English engineering regression expectation; not a legal judgment",
+      "review_status": "pending",
+      "dataset_version": "english-price-v1"
+    }
+  ]
+}

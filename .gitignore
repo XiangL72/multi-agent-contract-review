@@ -1,0 +1,27 @@
+# Modified for the English text/TXT demo; scope and behavior are documented in README.md.
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+# Dependencies and generated files
+.venv/
+venv/
+node_modules/
+.next/
+out/
+dist/
+build/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+.DS_Store
+# Local data and internal working materials
+output/
+tmp/
+uploads/
+.vscode/
+.idea/
